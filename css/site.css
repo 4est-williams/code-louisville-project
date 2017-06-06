@@ -47,7 +47,8 @@ ul li {
   font-weight: bold;
 }
 
-.selected {
+.selected,
+a:hover {
   color: #cac989;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
