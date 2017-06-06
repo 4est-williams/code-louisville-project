@@ -20,11 +20,16 @@ body {
   min-height: 100vh;
 }
 
+.cf {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*------HEADER AND NAV ------*/
 
 h1 {
   font-size: 2.8rem;
-  color: brown;
   text-align: center;
   clear: none;
   text-transform: uppercase;
@@ -59,6 +64,43 @@ a:hover {
   width: 90%;
   margin: auto;
   max-width: 1000px;
+}
+
+/*------CONTACT------*/
+
+.contact {
+  background-color: #798d59;
+}
+
+.contact form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #cac989;
+  border-radius: 8px;
+}
+
+input,
+label {
+  margin-bottom: 10px;
+}
+
+.parkpages a {
+  color: #443510;
+}
+
+.parkpages li,
+.parkpages h2 {
+  text-align: left;
+}
+
+.parkpages h2 {
+  margin-left: 5%;
+}
+
+.parkpages a:hover {
+  color: #cac989;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 /*------FEATURED PARK ------*/
@@ -121,6 +163,19 @@ a:hover {
   .featured-park img {
     width: 50%;
     margin-left: 25%;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact form {
+    margin: 10px 5%;
+  }
+
+  .parkpages {
+    flex-grow: 2;
   }
 
 }
