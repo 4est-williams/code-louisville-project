@@ -1,13 +1,34 @@
 /*------ BASE STYLES ------*/
 
+a {
+  text-decoration: none;
+  color: darkgreen;
+}
+
+h2 {
+  color: darkgreen;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*------HEADER AND NAV ------*/
+
 h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: brown;
   text-align: center;
   clear: none;
+  text-transform: uppercase;
 }
-
-/*------NAVIGATION ------*/
 
 .header {
   background-color: #ccbb70;
@@ -22,16 +43,46 @@ ul {
 ul li {
   text-align: center;
   padding: 10px 15px;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
-ul li a {
-  text-decoration: none;
-  color: brown;
-}
 
 /*------WELCOME ------*/
 
+.welcome {
+  width: 90%;
+  margin: auto;
+}
+
 /*------FEATURED PARK ------*/
+
+.featured-park {
+  background-color: #ccbb70;
+}
+
+.featured-park h2,
+.featured-park p {
+  width: 90%;
+  margin: auto;
+}
+
+.featured-park img {
+  width: 60%;
+  margin-left: 20%;
+  border-radius: 15px;
+}
+
+/*------FOOTER------*/
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footer p {
+  color: black;
+  text-align: center;
+}
 
 /*------RESPONSIVE ------*/
 
@@ -55,12 +106,22 @@ ul li a {
     padding: 10px 25px 10px 15px;
   }
 
+  .featured-park img {
+    width: 50%;
+    margin-left: 25%;
+  }
+
 }
 
 @media (min-width: 1025px) {
   .header {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .featured-park img {
+    width: 40%;
+    margin-left: 30%;
   }
 
 
