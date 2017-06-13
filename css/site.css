@@ -80,6 +80,10 @@ a:hover {
   border-radius: 8px;
 }
 
+label:first-of-type {
+  padding-right: 52px;
+}
+
 input,
 label {
   margin-bottom: 10px;
